@@ -69,12 +69,7 @@ export default function QrGenerator() {
 
   return (
     <div className='bg-blue-300 w-[100%] m-auto h-[100vh] flex flex-col items-center justify-center'>
-        <p className='text-md lg:w-[30%] p-3 text-center full mx-auto leading-loose tracking-wider
-         italic'>
-          This app let you create a qr code containg a web address where you want to 
-          land your user / person scanning that qr code.<code></code></p>
-          <p className='px-3 text-center underline text-xs my-2'>Enter the url, choose the theme and click on generate qr code and download</p>
-        <div className='bg-teal-400 h-fit w-fit lg:px-20 lg:py-10 py-10 px-5 rounded-lg flex flex-col gap-4 justify-center items-center'>
+      <div className='bg-teal-400 h-fit w-fit lg:px-20 lg:py-10 py-10 px-5 rounded-lg flex flex-col gap-4 justify-center items-center'>
         <h2 className='font-bold text-4xl text-blue-950'>QR Code Generator</h2>
           <div className='flex flex-col gap-3'>
           <div className='flex flex-col gap-2 h-auto '>
