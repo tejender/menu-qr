@@ -188,7 +188,7 @@ const remainingAmount = totalAmount - depositedAmount;
             <hr className='m-2'/>
 
             <p>Dear <span className='capitalize'>{formData.guestName} ,</span><br />We are delighted to confirm your booking for the {formData.cottageName}.
-             Your stay is scheduled from <b>{formData.checkInDate}</b> to <>{formData.checkOutDate}</>.</p>
+             Your stay is scheduled from <b>{formData.checkInDate}</b> to <b>{formData.checkOutDate}</b>.</p>
             <p>We have received your advance payment of <b>₹ {formData.depositedAmount}</b>. The remaining balance of <b>₹ {remainingAmount}</b> is due upon arrival.</p>
             <h3 className='font-bold text-lg ml-4'>Booking Summary:</h3>
             <ul className='ml-4'>
