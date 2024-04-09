@@ -13,10 +13,10 @@ export default function Page() {
         {
           category: "Tea and Coffee",
           items: [
-            { name: "Black Tea", price: 20, thumbnail: "/images/black-tea.jpg" },
-            { name: "Milk Tea", price: 30, thumbnail: "/images/milk-tea.jpg" },
-            { name: "Black Coffee", price: 30, thumbnail: "/images/black-coffee.jpg" },
-            { name: "Milk Coffee", price: 60, thumbnail: "/images/milk-coffee.jpg" },
+            { name: "Black Tea", price: 20, thumbnail: "black-tea.png" },
+            { name: "Milk Tea", price: 30, thumbnail: "milk-tea.webp" },
+            { name: "Black Coffee", price: 30, thumbnail: "black-coffee.jpeg" },
+            { name: "Milk Coffee", price: 60, thumbnail: "milk-coffee.jpeg" },
           ]
         },
       
@@ -24,9 +24,9 @@ export default function Page() {
         {
           category: "Cold Drinks",
           items: [
-            { name: "Lemon Water", price: 20, thumbnail: "/images/lemon-water.jpg" },
-            { name: "Cold Coffee", price: 100, thumbnail: "/images/cold-coffee.jpg" },
-            { name: "Lemon Soda", price: 50, thumbnail: "/images/lemon-soda.jpg" },
+            { name: "Lemon Water", price: 20, thumbnail: "lemon-water.jpeg" },
+            { name: "Cold Coffee", price: 100, thumbnail: "cold-coffee.png" },
+            { name: "Lemon Soda", price: 50, thumbnail: "lemon-soda.jpeg" },
           ]
         },
       
@@ -34,8 +34,8 @@ export default function Page() {
         {
           category: "Shakes",
           items: [
-            { name: "Banana Shake", price: 120, thumbnail: "/images/banana-shake.jpg" },
-            { name: "Mango Shake", price: 120, thumbnail: "/images/mango-shake.jpg" },
+            { name: "Banana Shake", price: 120, thumbnail: "banana-shake.jpeg" },
+            { name: "Mango Shake", price: 120, thumbnail: "mango-shake.webp" },
           ]
         },
       
@@ -43,12 +43,12 @@ export default function Page() {
         {
           category: "Breakfast",
           items: [
-            { name: "Plain Parantha", price: 50, thumbnail: "/images/plain-parantha.jpg" },
-            { name: "Aalu Parantha", price: 80, thumbnail: "/images/aalu-parantha.jpg" },
-            { name: "Gobhi Parantha", price: 80, thumbnail: "/images/gobhi-parantha.jpg" },
-            { name: "Paneer Parantha", price: 100, thumbnail: "/images/paneer-parantha.jpg" },
-            { name: "Aalu Pyaz Parantha", price: 80, thumbnail: "/images/aalu-pyaz-parantha.jpg" },
-            { name: "Egg Parantha", price: 90, thumbnail: "/images/egg-parantha.jpg" },
+            { name: "Plain Parantha", price: 50, thumbnail: "plain-parantha.jpeg" },
+            { name: "Aalu Parantha", price: 80, thumbnail: "aalu-parantha.jpeg" },
+            { name: "Mix Parantha", price: 80, thumbnail: "mix-parantha.webp" },
+            { name: "Paneer Parantha", price: 100, thumbnail: "paneer-parantha.jpeg" },
+            { name: "Aalu Pyaz Parantha", price: 80, thumbnail: "pyaz-parantha.jpeg" },
+            { name: "Egg Parantha", price: 90, thumbnail: "egg-parantha.jpeg" },
           ]
         },
       
@@ -56,9 +56,9 @@ export default function Page() {
         {
           category: "Omlates",
           items: [
-            { name: "Plain Omlatte", price: 50, thumbnail: "/images/plain-omlette.jpg" },
-            { name: "Bread Omlatte", price: 100, thumbnail: "/images/bread-omlette.jpg" },
-            { name: "Cheese Omlatte", price: 150, thumbnail: "/images/cheese-omlette.jpg" },
+            { name: "Plain Omlatte", price: 50, thumbnail: "plain-omelette.jpeg" },
+            { name: "Bread Omlatte", price: 100, thumbnail: "bread-omelette.jpeg" },
+            { name: "Cheese Omlatte", price: 150, thumbnail: "cheese-omelette.jpeg" },
           ]
         },
       
@@ -66,9 +66,9 @@ export default function Page() {
         {
           category: "Tosts",
           items: [
-            { name: "Plain toast", price: 20, thumbnail: "/images/plain-toast.jpg" },
-            { name: "Butter toast", price: 40, thumbnail: "/images/butter-toast.jpg" },
-            { name: "Honey toast", price: 50, thumbnail: "/images/honey-toast.jpg" },
+            { name: "Plain toast", price: 20, thumbnail: "plain-toast.jpeg" },
+            { name: "Butter toast", price: 40, thumbnail: "butter-toast.webp" },
+            { name: "Honey toast", price: 50, thumbnail: "honey-toast.jpeg" },
           ]
         },
       
@@ -76,10 +76,10 @@ export default function Page() {
         {
           category: "Sandwich",
           items: [
-            { name: "Veg Sandwich", price: 100, thumbnail: "/images/veg-sandwich.jpg" },
-            { name: "Chicken Sandwich", price: 150, thumbnail: "/images/chicken-sandwich.jpg" },
-            { name: "Egg Sandwich", price: 120, thumbnail: "/images/egg-sandwich.jpg" },
-            { name: "Cheese Sandwich", price: 150, thumbnail: "/images/cheese-sandwich.jpg" },
+            { name: "Veg Sandwich", price: 100, thumbnail: "veg-sandwich.jpeg" },
+            { name: "Chicken Sandwich", price: 150, thumbnail: "chicken-sandwich.jpeg" },
+            { name: "Egg Sandwich", price: 120, thumbnail: "egg-sandwich.jpeg" },
+            { name: "Cheese Sandwich", price: 150, thumbnail: "cheese-sandwich.jpeg" },
           ]
         },
       
@@ -125,11 +125,11 @@ export default function Page() {
                 >
                     <div className='h-20 w-20'>
                         <Image
-                            src='https://cdn.pixabay.com/photo/2016/10/13/11/44/chocolates-1737503_1280.jpg'
+                            src={`/images/winterfell/food-icon/${item.thumbnail}`}
                             alt={item.name}
                             height={60}
                             width={60}
-                            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                            style={{ width: '100%', height: '100%',objectFit:'cover'}}
                             className='rounded-full'
                         />
                     </div>
